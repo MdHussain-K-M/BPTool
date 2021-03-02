@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BPTool</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">*@
+    @*<link href="~/css/boostrap_4_5_2.css" rel="stylesheet" />*@
+    <link href="~/css/boostrap_4_5_2.min.css" rel="stylesheet" />
+    <!-- jQuery library -->
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>*@
+    <script src="~/js/jquery_3_5_1_min.js"></script>
+
+    <!-- Popper JS -->
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>*@
+    @*<script src="~/js/popper_1_16_0_min.js"></script>*@
+
+    <!-- Latest compiled JavaScript -->
+    @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>*@
+    @*<script src="~/js/boostrap_4_5_2_min.js"></script>*@   
+    <script src="~/js/bootstrapJquery.min.js"></script>
+
+    
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #673ab7 !important; ">
+            <a class="navbar-brand" href="#">(expleo)</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item active ml-auto">
+                        <a class="nav-link" href="/Home/index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Report/Index">Report</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/employee/getall">Employee</a>
+                    </li>
+                    <li class="nav-item dropdown mr-5">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="background-color: #673ab7 !important; ">
+            <div class="container">
+                <a class="navbar-brand fontColor" asp-area="" asp-controller="Home" asp-action="Index">.::(expleo)::.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>*@
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - BPTool - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>    
+        @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+        <script src="~/js/site.js" asp-append-version="true"></script>            
+        @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

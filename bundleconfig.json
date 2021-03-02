@@ -1,0 +1,15 @@
+[
+  {
+    "outputFileName": "wwwroot/css/boostrap_4_5_2.min.css",
+    "inputFiles": [
+      "wwwroot/css/boostrap_4_5_2.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/bootstrapJquery.js",
+    "inputFiles": [
+      "wwwroot/js/boostrap_4_5_2_min.js",
+      "wwwroot/js/popper_1_16_0_min.js"
+    ]
+  }
+]
