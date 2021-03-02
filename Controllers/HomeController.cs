@@ -20,7 +20,7 @@ namespace BPTool.Controllers
 
         public IActionResult Index()
         {
-            
+            string test = "testpush";
             return View();
         }
 
