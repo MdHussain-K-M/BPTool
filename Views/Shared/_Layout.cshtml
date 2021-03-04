@@ -21,10 +21,30 @@
 
     <!-- Latest compiled JavaScript -->
     @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>*@
-    @*<script src="~/js/boostrap_4_5_2_min.js"></script>*@   
-    <script src="~/js/bootstrapJquery.min.js"></script>
+    @*<script src="~/js/boostrap_4_5_2_min.js"></script>*@
 
-    
+    <link rel="SHORTCUT ICON" href="/lib/images/Title_logo.png" type="image/jpg" />
+    <link rel="stylesheet" href="/css/datatable/jquery.dataTables.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="/css/bpdashCSS/bpdashboard.css" type="text/css" />
+    <script src="~/js/bootstrapJquery.min.js"></script>
+    <script src="JS/jquery.min.js"></script>
+
+    <script src="JS/jquery.dataTables.min.js"></script>
+
+    <script  src="/js/meterJS/highcharts.js"></script>
+    <script src="/js/meterJS/fusioncharts.js"></script>
+
+
+    <script  src="/js/meterJS/highcharts-more.js"></script>
+
+    <script src="/js/meterJS/exporting.js"></script>
+
+    <script src="/js/meterJS/PracticeWiseNew.js"></script>
+
+   
+
+
 
 </head>
 <body>
@@ -87,12 +107,15 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - BPTool - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <script type="text/javascript">var theDate = new Date(); document.write(theDate.getFullYear());</script>
+
+            Expleo Group. All rights reserved.
+
         </div>
-    </footer>    
+    </footer>
         @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
-        <script src="~/js/site.js" asp-append-version="true"></script>            
+        <script src="~/js/site.js" asp-append-version="true"></script>
         @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
