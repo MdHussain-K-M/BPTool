@@ -20,7 +20,7 @@ namespace BPTool.Controllers
 
         public IActionResult Index()
         {
-            string MURUGAN = "TEST BY HUSSAIN";
+            
             return View();
         }
 

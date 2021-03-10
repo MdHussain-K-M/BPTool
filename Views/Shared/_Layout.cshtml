@@ -4,48 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BPTool</title>
-    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/site.css" />
-
     <!-- Latest compiled and minified CSS -->
-    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">*@
-    @*<link href="~/css/boostrap_4_5_2.css" rel="stylesheet" />*@
     <link href="~/css/boostrap_4_5_2.min.css" rel="stylesheet" />
     <!-- jQuery library -->
-    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>*@
     <script src="~/js/jquery_3_5_1_min.js"></script>
 
-    <!-- Popper JS -->
-    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>*@
-    @*<script src="~/js/popper_1_16_0_min.js"></script>*@
-
-    <!-- Latest compiled JavaScript -->
-    @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>*@
-    @*<script src="~/js/boostrap_4_5_2_min.js"></script>*@
-
-    <link rel="SHORTCUT ICON" href="/lib/images/Title_logo.png" type="image/jpg" />
+    <link rel="SHORTCUT ICON" href="~/lib/images/Title_logo.png" type="image/jpg" />
     <link rel="stylesheet" href="/css/datatable/jquery.dataTables.min.css" type="text/css" />
-
-    <link rel="stylesheet" href="/css/bpdashCSS/bpdashboard.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/bpdashCSS/bpdashboard.css" type="text/css" />
     <script src="~/js/bootstrapJquery.min.js"></script>
-    <script src="JS/jquery.min.js"></script>
-
-    <script src="JS/jquery.dataTables.min.js"></script>
-
-    <script  src="/js/meterJS/highcharts.js"></script>
-    <script src="/js/meterJS/fusioncharts.js"></script>
-
-
-    <script  src="/js/meterJS/highcharts-more.js"></script>
-
-    <script src="/js/meterJS/exporting.js"></script>
-
-    <script src="/js/meterJS/PracticeWiseNew.js"></script>
-
-   
-
-
-
+    <script src="~/js/meterJS/jquery.min.js"></script>
+    <script src="~/js/meterJS/jquery.dataTables.min.js"></script>
+    @*<script src="~/js/meterJS/highcharts.js"></script>
+            <script src="~/js/meterJS/fusioncharts.js"></script>
+            <script src="~/js/meterJS/highcharts-more.js"></script>
+        <script src="~/js/meterJS/exporting.js"></script>*@
+    <script src="~/js/meterJS/PracticeWiseNew.js"></script>
+    <script src="~/js/meterJS/highcharts.js"></script>
+    <script src="~/js/meterJS/highcharts-more.js"></script>
+    <script src="~/js/meterJS/meter.js"></script>
+    <link href="~/css/meter.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -54,6 +33,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <label class="">Business partner complaince dashboard</label>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item active ml-auto">
@@ -99,7 +79,7 @@
             </div>
         </nav>*@
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
