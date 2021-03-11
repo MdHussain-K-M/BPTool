@@ -88,15 +88,15 @@
                     l = {
                         "class": "highcharts-pane " + (b.className || "")
                     };
-                this.chart.styledMode || n(l, {
-                    fill: b.backgroundColor,
-                    stroke: b.borderColor,
-                    "stroke-width": b.borderWidth
-                });
-                this.background[a] || (this.background[a] = this.chart.renderer.path().add(this.group), k = "attr");
-                this.background[a][k]({
-                    d: this.axis.getPlotBandPath(b.from, b.to, b)
-                }).attr(l)
+                //this.chart.styledMode || n(l, {
+                //    fill: b.backgroundColor,
+                //    stroke: b.borderColor,
+                //    "stroke-width": b.borderWidth
+                //});
+                //this.background[a] || (this.background[a] = this.chart.renderer.path().add(this.group), k = "attr");
+                //this.background[a][k]({
+                //    d: this.axis.getPlotBandPath(b.from, b.to, b)
+                //}).attr(l)
             };
             b.prototype.updateCenter = function(b) {
                 this.center = (b || this.axis || {}).center = u.getCenter.call(this)
