@@ -1,41 +1,114 @@
 ﻿@{
     ViewData["Title"] = "Dashboard";
 }
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-<div >
-    <a href="#">
+<div>
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerADMIN"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerCMG"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerFINANCE"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerIT"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerLnD"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerLEGAL"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerPEOPLE_SERVICE"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerRMG"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerSALES"></div>
     </a>
-    <a href="#">
+    <a onclick="openPopUp()">
         <div class="col-md-3 auto-style19" id="containerTRAVEL"></div>
     </a>
 </div>
 
+<div class="modal fade" id="modalPopup" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Header</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="display: block;">
+                    <a onclick="openPopUp()">
+                        <div class="col-md-3 style19" id="containerModal"></div>
+                    </a>
+                </div>
+                <div style="display: inline-block;">
+                    <table id="tblModal" class="table table-hover table-responsive" >
+                        <thead>
+                            <tr>
+                                <th>Col 1</th>
+                                <th>Col 1</th>
+                                <th>Col 1</th>
+                                <th>Col 1</th>
+                                <th>Col 1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                            </tr>
+                            <tr>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                            </tr>
+                            <tr>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                            </tr>
+                            <tr>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                                <td>Val 1</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
+    function openPopUp() {
+        $("#modalPopup").modal({ backdrop: "static" });
+
+    }
+
     pageLoad();
 </script>

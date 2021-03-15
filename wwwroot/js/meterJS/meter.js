@@ -3,11 +3,12 @@
 function pageLoad (){
 //  containerList = new Array();
  containerList = ['containerADMIN','containerCMG','containerFINANCE','containerIT','containerLnD','containerLEGAL'
- ,'containerPEOPLE_SERVICE','containerRMG','containerSALES','containerTRAVEL']
+     , 'containerPEOPLE_SERVICE', 'containerRMG', 'containerSALES', 'containerTRAVEL', 'containerModal']
+        
  
  containerList.forEach(_container => {
      
-    configureMeterContainer(_container,_container.replace('container','').replace('_',' '));      
+     configureMeterContainer(_container, _container.replace('container', '').replace('_', ' ').replace('Modal', ' '));      
  });
  
 }
